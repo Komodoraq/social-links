@@ -1,0 +1,179 @@
+@font-face {
+	font-family: "Inter";
+	src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(0, 0%, 8%);
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: hsl(0, 0%, 12%);
+	padding: 20px;
+	border-radius: 15px;
+	max-height: 90%;
+	max-width: 90%;
+	width: 350px;
+	min-height: 600px;
+	gap: 26px;
+}
+
+.profile_img {
+	border-radius: 100%;
+	margin-top: 15px;
+	max-width: 100%;
+	height: auto;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 26px;
+	font-family: "Inter-Regular", sans-serif;
+	font-weight: lighter;
+}
+
+h2 {
+	color: hsl(75, 94%, 57%);
+	font-size: 14px;
+	font-family: "Inter", sans-serif;
+}
+
+.quote {
+	color: hsl(0, 0%, 100%);
+	font-size: 14px;
+	font-family: "Inter", sans-serif;
+	font-weight: 200;
+}
+
+.links {
+	display: flex;
+	margin-top: auto;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.links__button {
+	background-color: hsl(0, 0%, 20%);
+	font-family: "Inter", sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 50px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.links__button:hover {
+	background-color: hsl(75, 94%, 57%);
+	color: hsl(0, 0%, 8%);
+}
+
+@media screen and (min-width: 576px) {
+	.container {
+		width: 320px;
+	}
+
+	.links__button {
+		width: 280px;
+		height: 48px;
+		font-size: 13.5px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	.attribution {
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 350px;
+	}
+
+	.links__button {
+		width: 300px;
+		height: 50px;
+		font-size: 14px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	h2,
+	.quote {
+		font-size: 14px;
+	}
+
+	.attribution {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		padding: 20px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		padding: 40px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.container {
+		width: 400px;
+	}
+
+	.links__button {
+		width: 320px;
+		height: 55px;
+		font-size: 15px;
+	}
+}

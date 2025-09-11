@@ -30,7 +30,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: hsl(0, 0%, 8%);
-	padding: 0;
+	padding: 20px;
 }
 
 .container {
@@ -40,10 +40,12 @@ body {
 	text-align: center;
 	background-color: hsl(0, 0%, 12%);
 	padding: 20px;
-	border-radius: 15px;
-	width: 90%;
+	border-radius: 10px;
+	width: 100%;
+	height: 90vh;
+	overflow-y: auto;
 	max-width: 350px;
-	min-height: 600px;
+	max-height: 590px;
 	gap: 26px;
 }
 
@@ -77,14 +79,13 @@ body {
 	color: hsl(0, 0%, 100%);
 	font-size: 14px;
 	font-family: "Inter", sans-serif;
-	font-weight: 200;
+	font-weight: normal;
 }
 
 .links {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	margin-top: auto;
 	flex-direction: column;
 	gap: 15px;
 }
@@ -100,8 +101,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
-	height: 50px;
+	width: 100%;
+	padding: 16px 16px;
 	transition: background-color 0.3s, color 0.3s;
 }
 
@@ -112,46 +113,31 @@ body {
 
 @media screen and (min-width: 576px) {
 	.container {
-		width: 320px;
+		width: 100%;
 	}
 
 	.links__button {
-		width: 280px;
-		height: 48px;
-		font-size: 13.5px;
-	}
-
-	h1 {
-		font-size: 24px;
-	}
-
-	.attribution {
+		width: 100%;
 		font-size: 14px;
+	}
+
+	.initials {
+		font-size: 26px;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.container {
-		width: 350px;
-	}
-
 	.links__button {
-		width: 300px;
-		height: 50px;
+		width: 100%;
 		font-size: 14px;
 	}
 
-	h1 {
+	.initials {
 		font-size: 26px;
 	}
 
-	h2,
 	.quote {
 		font-size: 14px;
-	}
-
-	.attribution {
-		font-size: 15px;
 	}
 }
 
@@ -168,13 +154,8 @@ body {
 }
 
 @media screen and (min-width: 1400px) {
-	.container {
-		width: 400px;
-	}
-
 	.links__button {
-		width: 320px;
-		height: 55px;
-		font-size: 15px;
+		width: 100%;
+		font-size: 14px;
 	}
 }

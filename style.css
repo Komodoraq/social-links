@@ -12,7 +12,7 @@
 	font-family: "Inter";
 	src: url(assets/fonts/static/Inter-SemiBold.ttf);
 }
-/* test comment */
+
 html {
 	box-sizing: border-box;
 }
@@ -41,9 +41,8 @@ body {
 	background-color: hsl(0, 0%, 12%);
 	padding: 20px;
 	border-radius: 15px;
-	max-height: 90%;
-	max-width: 90%;
-	width: 350px;
+	width: 90%;
+	max-width: 350px;
 	min-height: 600px;
 	gap: 26px;
 }
@@ -61,14 +60,14 @@ body {
 	gap: 8px;
 }
 
-h1 {
+.initials {
 	color: hsl(0, 0%, 100%);
 	font-size: 26px;
 	font-family: "Inter-Regular", sans-serif;
 	font-weight: lighter;
 }
 
-h2 {
+.location {
 	color: hsl(75, 94%, 57%);
 	font-size: 14px;
 	font-family: "Inter", sans-serif;
@@ -82,7 +81,9 @@ h2 {
 }
 
 .links {
+	width: 100%;
 	display: flex;
+	align-items: center;
 	margin-top: auto;
 	flex-direction: column;
 	gap: 15px;
@@ -99,7 +100,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 300px;
+	width: 90%;
 	height: 50px;
 	transition: background-color 0.3s, color 0.3s;
 }
